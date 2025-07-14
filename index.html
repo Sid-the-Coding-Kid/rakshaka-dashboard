@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rakshaka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Rakshaka</h1>
+  <div class="alert" id="alertBox">⚠️ WARNING: High gas detected!</div>
+  <div class="gauges">
+    <div class="gauge"><h2>Temp (°C)</h2><div id="gaugeTemp">--</div></div>
+    <div class="gauge"><h2>Humidity (%)</h2><div id="gaugeHum">--</div></div>
+    <div class="gauge"><h2>Smoke</h2><div id="gaugeSmoke">--</div></div>
+    <div class="gauge"><h2>Ammonia</h2><div id="gaugeAmmonia">--</div></div>
+  </div>
+  <canvas id="chartSmoke"></canvas>
+  <canvas id="chartAmmonia"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
